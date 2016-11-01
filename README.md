@@ -1,2 +1,2 @@
-# CodingTest
-the test about javascript/css/html
+# CodingQuestions
+There are some Interview questions I met.
