@@ -47,3 +47,16 @@ function sortExtensionsByExtType(extensions) {
     }
 }
 
+/**
+    Question :
+    AllKeys: 0-9;
+    usedKeys: an array to store all used keys like [2,3,4];
+    We want to get an array which contains all the unused keys,in this example it would be: [0,1,5,6,7,8,9]
+**/
+
+function getUnUsedKeys(allKeys, usedKeys) {
+  return allKeys.filter(function(item, index, array){
+    return (usedKeys.indexOf(item) === -1);
+  });
+}
+
