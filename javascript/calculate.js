@@ -1,4 +1,13 @@
 /**
+  saleItems is an Array has each item has such format:
+  {
+	month: n, //[1-12],
+	date: n, //[1-31],
+	transationId: "xxx",
+	salePrice: number
+  }
+**/
+/**
  Question : write a function to calculate and return a list of total sales (sum) for each quarter, expected result like:
  [
  {quater: 1, totalPrices: xxx, transactionNums: n},
