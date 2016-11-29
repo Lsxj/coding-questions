@@ -64,3 +64,31 @@ polyfill:
 ---
 
 使用常量形式定义正则表达式，语法简单，执行效率高，因为JavaScript引擎在代码执行前会对它们进行预编译和缓存。
+
+---
+---
+
+判断一个对象是否为数组
+*  Array.isArray()
+* instanceof() == Array
+* typeof() == ‘[object Array]’
+
+---
+---
+伪随机算法
+
+    arr.sort(function(a, b ){
+    return 0.5 - Math.random();
+    })
+    
+---
+---
+
+    var f = function g() {
+            return 23;
+        };
+    typeof f; //"function"
+    typeof f(); //"number"
+    typeof g; //"undefined"
+    typeof g(); //Uncaught ReferenceError: g is not defined(…)
+
