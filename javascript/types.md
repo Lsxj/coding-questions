@@ -93,4 +93,12 @@ polyfill:
     typeof g(); //Uncaught ReferenceError: g is not defined(…)
     
 ---
+---
+```
+  [] + {}; //"[object Object]"  
+  {} + []; //0
+```
 
+第一行代码中，{}出现在+后面，被当成一个空对象处理。[]强制转换为""，{}强制转换为"[object Object]"。  
+第二行代码，{}被当成一个独立的空代码块，即执行+[]操作，[]转换为0。
+---
